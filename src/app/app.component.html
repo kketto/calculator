@@ -1,0 +1,36 @@
+<div class="content">
+    <app-input [text]="displayValue"></app-input>
+
+    <div>
+        <app-button [text]="'Keto'" (pressed)="geniusNomeroUno()"></app-button>
+        <app-button [text]="'C'" (pressed)="clearing()"></app-button>
+        <app-button [text]="'<='" (pressed)="backspace()"></app-button>
+        <app-button [text]="'/'" (pressed)="operationClick(OperatorValue.Div)"></app-button>
+    </div>
+
+    <div>
+        <app-button [text]="'7'" (pressed)="clickDigitOrDot(7)"></app-button>
+        <app-button [text]="'8'" (pressed)="clickDigitOrDot(8)"></app-button>
+        <app-button [text]="'9'" (pressed)="clickDigitOrDot(9)"></app-button>
+        <app-button [text]="'X'" (pressed)="operationClick(OperatorValue.Mul)"></app-button>
+    </div>
+
+    <div>
+        <app-button [text]="'4'" (pressed)="clickDigitOrDot(4)"></app-button>
+        <app-button [text]="'5'" (pressed)="clickDigitOrDot(5)"></app-button>
+        <app-button [text]="'6'" (pressed)="clickDigitOrDot(6)"></app-button>
+        <app-button [text]="'-'" (pressed)="operationClick(OperatorValue.Minus)"></app-button>
+    </div>
+    <div>
+        <app-button [text]="'1'" (pressed)="clickDigitOrDot(1)"></app-button>
+        <app-button [text]="'2'" (pressed)="clickDigitOrDot(2)"></app-button>
+        <app-button [text]="'3'" (pressed)="clickDigitOrDot(3)"></app-button>
+        <app-button [text]="'+'" (pressed)="operationClick(OperatorValue.Plus)"></app-button>
+    </div>
+    <div>
+        <app-button [text]="'+/-'" (pressed)="negate()"></app-button>
+        <app-button [text]="'0'" (pressed)="clickDigitOrDot(0)"></app-button>
+        <app-button [text]="'.'" (pressed)="clickDigitOrDot('.')"></app-button>
+        <app-button [text]="'='" (pressed)="equals()"></app-button>
+    </div>
+</div>
